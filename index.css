@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Dacheery';
+	src: url('./font/Dacherry.otf') format("opentype");     
+}
+
+    /*selecteur universel (tous) et après before after : */
+
+    /*   *, ::before, ::after { prends en compte le calcul de la hauteur et de la largeur, remplissage et bordure 
+    box-sizing: border-box;
+    margin:0;/*plus logique
+    padding:0;  */
+    
+body{   
+    
+    background: url(images/fond.avif) no-repeat center;
+    background-size: cover;
+    margin: 0px;
+    padding: 10px;
+}  
+
+header{
+    background-color:rgb(6, 31, 15);
+    height: 80px;
+    margin: 0px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a{
+    color:rgb(92, 204, 92);
+    letter-spacing: 0.1rem;
+}
+
+ul li a:hoover{
+    color:rgb(255, 240, 249);
+    text-decoration:underline;
+}
+
+.index li{
+    float:left;
+    padding: 35px;
+}
+
+.index li a{
+    text-decoration: none;
+}
+
+input[type="search"]{
+    font: 35px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.item{
+    flex-basis: auto;
+}
+
+h1{
+    font-family: 'Dacheery';
+    text-align: center;
+    font-size: 100px;
+    margin: 20px;
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.animation{
+
+}
+
+  @keyframes titre { /*animation plus précise*/
+    
+}
+p#introduction{
+    text-align: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size: 30px;
+}
+
+.bouton{
+    display: block;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.bouton:hover { /*surbrillance de couleur option :hover*/
+    background-color: rgb(122,168,63);
+}
+      
+hr { /*ligne*/
+    size:100%;
+    background-color: rgb(122, 168, 63);
+    height: 5px;
+    border: 0;
+}
+  
+.flex-container{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.flex-container img{
+    object-fit: contain;
+    width: 24%;
+    margin: 10px 0px;/*10 en haut en bas 0 sur les côtés*/
+    box-shadow: grey(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, grey(2, 8, 20, 0.1) 0px 0.75rem 0.175rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flex-container-article{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    gap: 20px;
+
+}
+.flex-container-article article{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 38%;
+  }
+
+/*entreprise*/
+p#équipe{
+    text-align: center;
+}
+
+/*Réalisations*/
+.photos{
+    margin: 20px 20px;
+    margin-block-start: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    box-shadow: grey(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, grey(2, 8, 20, 0.1) 0px 0.75rem 0.175rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*contacts*/
+
+.btn {
+    top: 100px;
+    right: 90px;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 2px solid #333;
+    color:#333;
+    transition: all 0.2s ease-in-out;
+    float: right;
+}
+
+.btn:hover {
+    background:#333; /*chgt de couleur*/
+    color: #f1f1f1;
+    }
+
+form{
+    padding: 23px;
+    text-align: right;
+}
+
+
+/*footer*/
+
+.menu-bas li{
+    float: right;
+    padding: 10px;
+}
+.menu-bas li a{
+    text-decoration: none;
+}
+
+.medias{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.media-container{
+    display: flex;
+    padding: left 100px;
+    margin: 0px 0px 0px 10px;
+}
+
+.medias-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background:#ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:10%;
+        cursor: pointer;
+}
+    
+.icones{
+        width: 27px;      
+    }
+.footer{
+    background-color:rgb(6, 31, 15);
+    height: 80px;
+    margin: 0px;
+}
+
+
