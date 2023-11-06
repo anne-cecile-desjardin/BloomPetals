@@ -24,6 +24,11 @@ header{
     margin: 0px;
 }
 
+#recherche{
+    padding: 23px;
+    text-align: right;
+}
+
 nav ul li{
     list-style-type: none;
     display: inline-block;
@@ -140,7 +145,7 @@ hr { /*ligne*/
   }
 
 /*entreprise*/
-p#équipe{
+#équipe{
     text-align: center;
 }
 
@@ -182,13 +187,13 @@ p#équipe{
 .btn:hover {
     background:#333; /*chgt de couleur*/
     color: #f1f1f1;
-    }
-
-form{
-    padding: 23px;
-    text-align: right;
 }
 
+#form_contact {
+    padding: 0px;
+    text-align:left;
+    left: 10px;
+}
 
 /*footer*/
 
@@ -214,7 +219,7 @@ form{
 
 .medias-btn {
         width: 50px;
-        height: 50px;
+       height: 50px;
         border-radius: 50%;
         background:#ffffff;
         display: flex;
